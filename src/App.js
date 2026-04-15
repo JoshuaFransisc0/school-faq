@@ -195,7 +195,8 @@ export default function FAQSite() {
       if (editingId === "new") {
         await sb("/faqs", "POST", [{ ...form }]);
       } else {
-        await sb(`/faqs?id=eq.${editingId}`, "PATCH", { ...form });
+        const { id, created_at, ...updateData } = form;
+await sb(`/faqs?id=eq.${editingId}`, "PATCH", updateData);
       }
       setEditingId(null);
       await load();
