@@ -109,7 +109,8 @@ const inputStyle = {
 };
 
 const EditForm = ({ item, onSave, onCancel }) => {
-  const [form, setForm] = useState(item || { category: Object.keys(CAT_COLOR)[0], question: "", answer: "" });
+  const { id, created_at, ...rest } = item || {};
+  const [form, setForm] = useState(item ? rest : { category: Object.keys(CAT_COLOR)[0], question: "", answer: "" });
   const set = (k, v) => setForm(f => ({ ...f, [k]: v }));
   return (
     <div style={{ background: "#fff", border: "1.5px solid #e0d8cc", borderRadius: "10px", padding: "20px" }}>
