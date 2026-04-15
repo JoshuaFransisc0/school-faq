@@ -6,7 +6,7 @@ import { useState, useEffect, useMemo } from "react";
 const SUPABASE_URL = "https://ipabkpmtvxoglxtbnmqo.supabase.co";
 const SUPABASE_ANON_KEY =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlwYWJrcG10dnhvZ2x4dGJubXFvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYyMjk0ODIsImV4cCI6MjA5MTgwNTQ4Mn0.nDpu12cYIErWjItlcfxbIGKUlWoxh3Yo3BGAvk86G_o";
-const ADMIN_PASSWORD = "rakuda2026"; // ← 必ず変更してください
+const ADMIN_PASSWORD = "camel2027rakuda"; // ← 必ず変更してください
 
 // =============================================
 // Supabase REST ヘルパー
